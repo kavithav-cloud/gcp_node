@@ -10,7 +10,7 @@ const pool = new poll({
     port: process.env.DB_PORT,
 });
 
-const query = 'SELECT * FROM users';
+const query = 'SELECT * FROM test.users';
 
 const queryresults = () => {
     return new Promise((resolve, reject) => {
