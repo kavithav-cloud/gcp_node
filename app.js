@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 const QueryResults = require('./db.js');
 
-const port = 3000;  
+const port = 8080;  
 
 app.get('/', (req, res) => {
   res.send(`Hello World! Environment: ${process.env.environment}`);
