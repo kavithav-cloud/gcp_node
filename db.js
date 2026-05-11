@@ -8,6 +8,9 @@ const pool = new poll({
     database: process.env.DB_NAME,
     password: process.env.DB_PASSWORD,
     port: process.env.DB_PORT,
+    ssl: {
+          rejectUnauthorized: false,
+        },
 });
 
 const query = 'SELECT * FROM test.user';
